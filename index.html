@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rashmitha P S | .NET Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #060a14;
+        }
+
+        h1, h2, h3, .tech-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .glow-gold {
+            box-shadow: 0 0 20px rgba(212, 175, 90, 0.15);
+        }
+
+        .glow-gold-hover:hover {
+            box-shadow: 0 0 35px rgba(212, 175, 90, 0.25);
+            border-color: rgba(212, 175, 90, 0.5);
+        }
+
+        .text-glow {
+            text-shadow: 0 0 18px rgba(212, 175, 90, 0.35);
+        }
+
+        .slider-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0f1c; }
+        ::-webkit-scrollbar-thumb { background: #1e2740; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #d4af5a; }
+    </style>
+</head>
+
+<body class="text-slate-300 overflow-x-hidden">
+
+    <!-- Ambient grid background -->
+    <div
+        class="fixed inset-0 bg-[linear-gradient(to_right,#0e1526_1px,transparent_1px),linear-gradient(to_bottom,#0e1526_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none z-0">
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-[#060a14]/85 backdrop-blur-md border-b border-slate-900 z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-white font-bold text-xl tracking-wider tech-font">
+                RASHMITHA<span class="text-amber-400"></span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold">
+                <a href="#about" class="hover:text-amber-400 transition">About</a>
+                <a href="#skills" class="hover:text-amber-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-amber-400 transition">Projects</a>
+                <a href="#experience" class="hover:text-amber-400 transition">Experience</a>
+                <a href="#education" class="hover:text-amber-400 transition">Education</a>
+            </div>
+            <a href="Rashmitha_Resume.pdf" target="_blank"
+                class="border border-amber-400/50 text-amber-400 px-4 py-2 rounded text-sm hover:bg-amber-400 hover:text-[#060a14] transition duration-300 tech-font glow-gold hidden sm:block">
+                Resume
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="about" class="relative min-h-screen flex items-center justify-center pt-28 pb-10 z-10 px-6">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+
+                <!-- Left: text -->
+                <div class="lg:col-span-8 space-y-5 order-2 lg:order-1">
+                    <div
+                        class="inline-flex items-center space-x-2 bg-amber-400/10 border border-amber-400/30 px-4 py-1.5 rounded-full text-xs text-amber-300 font-mono tracking-wider shadow-[0_0_10px_rgba(212,175,90,0.15)]">
+                        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse shadow-[0_0_8px_rgba(212,175,90,0.8)]"></span>
+                        <span>DUBAI, UAE &nbsp;|&nbsp; 5+ YEARS OF PROFESSIONAL EXPERIENCE</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight tech-font">
+                        Rashmitha P S <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-yellow-500 text-glow">.NET
+                            Full Stack Developer</span>
+                    </h1>
+                    <p class="text-slate-400 text-base md:text-lg max-w-2xl leading-relaxed">
+                        Building scalable enterprise web applications and real-time systems with
+                        <span class="text-white font-semibold tech-font tracking-wide">.NET Core Web APIs, Angular, SQL
+                            Server</span> and AI-driven automation - turning complex enterprise requirements into
+                        fast, reliable systems that run in production.
+                    </p>
+
+                    <!-- Contact grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1 text-sm font-mono text-slate-400">
+                        <a href="mailto:pulunjanarashmitha97@gmail.com"
+                            class="flex items-center hover:text-amber-300 transition-colors cursor-pointer"><i
+                                class="fas fa-envelope text-amber-400 w-6"></i> pulunjanarashmitha97@gmail.com</a>
+                        <a href="tel:+9710509028359"
+                            class="flex items-center hover:text-amber-300 transition-colors cursor-pointer"><i
+                                class="fas fa-phone-alt text-amber-400 w-6"></i> +971 50 902 8359</a>
+                        <a href="https://linkedin.com/in/rashmitha-pulunjana-810560202" target="_blank"
+                            class="flex items-center hover:text-amber-300 transition-colors cursor-pointer"><i
+                                class="fa-brands fa-linkedin text-amber-400 w-6"></i> linkedin.com/in/rashmitha-pulunjana</a>
+                        <span class="flex items-center text-slate-500"><i class="fas fa-location-dot text-amber-400 w-6"></i> Dubai, UAE</span>
+                    </div>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#projects"
+                            class="bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-[#060a14] font-semibold px-8 py-3 rounded shadow-[0_0_15px_rgba(212,175,90,0.35)] transition-all duration-300 tech-font transform hover:-translate-y-1 tracking-wide">
+                            View Projects
+                        </a>
+                        <a href="#experience"
+                            class="bg-slate-900/80 backdrop-blur-sm hover:bg-slate-800 border border-slate-700 hover:border-amber-400/50 text-white font-semibold px-8 py-3 rounded transition-all duration-300 flex items-center gap-2 transform hover:-translate-y-1 group">
+                            <i class="fas fa-briefcase text-amber-400 group-hover:text-amber-300"></i> Experience
+                        </a>
+                        <a href="Rashmitha_Resume.pdf" target="_blank"
+                            class="bg-transparent border border-amber-400/50 hover:bg-amber-400/10 text-amber-300 font-semibold px-8 py-3 rounded transition-all duration-300 flex items-center gap-2 transform hover:-translate-y-1 group tech-font">
+                            <i class="fas fa-download group-hover:animate-bounce"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: profile photo + quick facts -->
+                <div class="lg:col-span-4 flex flex-col items-center order-1 lg:order-2 relative gap-6">
+                    <div class="relative flex justify-center">
+                        <div class="absolute inset-0 bg-amber-400/15 blur-3xl rounded-full animate-pulse"></div>
+                        <div
+                            class="relative w-52 h-52 md:w-64 md:h-64 rounded-full p-1.5 bg-gradient-to-br from-amber-400 via-slate-900 to-yellow-600 shadow-[0_0_40px_rgba(212,175,90,0.25)] group hover:shadow-[0_0_60px_rgba(212,175,90,0.4)] transition-shadow duration-700">
+                            <div class="w-full h-full rounded-full overflow-hidden bg-slate-950 relative">
+                                <img id="profile-img" src="profile.jpg" alt="Rashmitha P S"
+                                    style="object-position: 30% 40%;"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+                                <div
+                                    class="absolute inset-0 border-[3px] border-amber-400/25 rounded-full pointer-events-none scale-[0.96] group-hover:scale-100 transition-transform duration-700">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick facts card -->
+                    <div class="w-full bg-slate-950/80 backdrop-blur-sm border border-slate-900 rounded-xl p-5 glow-gold relative overflow-hidden">
+                        <div class="absolute -right-6 -top-6 w-24 h-24 bg-amber-400/5 rounded-full blur-2xl"></div>
+                        <ul class="space-y-3 text-xs relative z-10">
+                            <li class="flex items-center justify-between border-b border-slate-900 pb-2.5">
+                                <span class="text-slate-500 uppercase tracking-wider font-mono">Role</span>
+                                <span class="text-white font-medium">Full Stack Developer</span>
+                            </li>
+                            <li class="flex items-center justify-between border-b border-slate-900 pb-2.5">
+                                <span class="text-slate-500 uppercase tracking-wider font-mono">Experience</span>
+                                <span class="text-white font-medium">5+ Years</span>
+                            </li>
+                            <li class="flex items-center justify-between border-b border-slate-900 pb-2.5">
+                                <span class="text-slate-500 uppercase tracking-wider font-mono">Visa Status</span>
+                                <span class="text-white font-medium">Sponsored Residential</span>
+                            </li>
+                            <li class="flex items-center justify-between">
+                                <span class="text-slate-500 uppercase tracking-wider font-mono">Notice Period</span>
+                                <span class="text-white font-medium">30 Days</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats strip -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-14 pt-10 border-t border-slate-900">
+                <div class="text-center md:text-left">
+                    <p class="text-3xl md:text-4xl font-bold text-white tech-font">5<span class="text-amber-400">+</span></p>
+                    <p class="text-[11px] uppercase tracking-widest text-slate-500 font-mono mt-1">Years Experience</p>
+                </div>
+                <div class="text-center md:text-left">
+                    <p class="text-3xl md:text-4xl font-bold text-white tech-font">6<span class="text-amber-400">+</span></p>
+                    <p class="text-[11px] uppercase tracking-widest text-slate-500 font-mono mt-1">Enterprise Projects</p>
+                </div>
+                <div class="text-center md:text-left">
+                    <p class="text-3xl md:text-4xl font-bold text-white tech-font">3</p>
+                    <p class="text-[11px] uppercase tracking-widest text-slate-500 font-mono mt-1">Companies</p>
+                </div>
+                <div class="text-center md:text-left">
+                    <p class="text-3xl md:text-4xl font-bold text-white tech-font">20<span class="text-amber-400">%</span></p>
+                    <p class="text-[11px] uppercase tracking-widest text-slate-500 font-mono mt-1">Efficiency Gain Delivered</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-20 bg-[#0a0f1c] border-y border-slate-900 relative z-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 tracking-wide tech-font uppercase">Technical
+                    Skills</h2>
+                <div class="h-1 w-24 bg-gradient-to-r from-amber-500 to-yellow-400 mx-auto rounded shadow-[0_0_10px_rgba(212,175,90,0.5)]">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+
+                <div class="bg-slate-950 p-6 rounded-xl border border-slate-900 hover:border-amber-400/40 hover:bg-[#0c1220] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(212,175,90,0.1)] group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-amber-400/5 rounded-full blur-2xl group-hover:bg-amber-400/10 transition-colors"></div>
+                    <div class="w-12 h-12 rounded-lg bg-amber-400/10 flex items-center justify-center text-amber-400 text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-4 text-lg tech-font tracking-wide">Languages & Frameworks</h3>
+                    <ul class="space-y-3 font-mono text-xs text-slate-400">
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> C#, TypeScript, JavaScript</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> .NET Core, .NET 9</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> Angular 16, ASP.NET WebForms</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> HTML5, CSS3</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-950 p-6 rounded-xl border border-slate-900 hover:border-amber-400/40 hover:bg-[#0c1220] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(212,175,90,0.1)] group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-amber-400/5 rounded-full blur-2xl group-hover:bg-amber-400/10 transition-colors"></div>
+                    <div class="w-12 h-12 rounded-lg bg-amber-400/10 flex items-center justify-center text-amber-400 text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-4 text-lg tech-font tracking-wide">Backend & Architecture</h3>
+                    <ul class="space-y-3 font-mono text-xs text-slate-400">
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> REST APIs & Microservices</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> Clean Architecture</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> JWT Authentication & OAuth 2.0</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> SignalR real-time services</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-950 p-6 rounded-xl border border-slate-900 hover:border-amber-400/40 hover:bg-[#0c1220] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(212,175,90,0.1)] group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-amber-400/5 rounded-full blur-2xl group-hover:bg-amber-400/10 transition-colors"></div>
+                    <div class="w-12 h-12 rounded-lg bg-amber-400/10 flex items-center justify-center text-amber-400 text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-4 text-lg tech-font tracking-wide">Databases & Data Access</h3>
+                    <ul class="space-y-3 font-mono text-xs text-slate-400">
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> Microsoft SQL Server</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> Oracle PL/SQL</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> Dapper, ADO.NET, LINQ</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> Legacy-to-Modern Migration</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-950 p-6 rounded-xl border border-slate-900 hover:border-amber-400/40 hover:bg-[#0c1220] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(212,175,90,0.1)] group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-amber-400/5 rounded-full blur-2xl group-hover:bg-amber-400/10 transition-colors"></div>
+                    <div class="w-12 h-12 rounded-lg bg-amber-400/10 flex items-center justify-center text-amber-400 text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-4 text-lg tech-font tracking-wide">AI & Automation</h3>
+                    <ul class="space-y-3 font-mono text-xs text-slate-400">
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> Ollama (Local LLM Integration)</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> AI-driven Process Automation</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> Intelligent enterprise workflows</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> Prompt-driven internal tooling</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-950 p-6 rounded-xl border border-slate-900 hover:border-amber-400/40 hover:bg-[#0c1220] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(212,175,90,0.1)] group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-amber-400/5 rounded-full blur-2xl group-hover:bg-amber-400/10 transition-colors"></div>
+                    <div class="w-12 h-12 rounded-lg bg-amber-400/10 flex items-center justify-center text-amber-400 text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-4 text-lg tech-font tracking-wide">Notifications & Messaging</h3>
+                    <ul class="space-y-3 font-mono text-xs text-slate-400">
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> Firebase Cloud Messaging (FCM)</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> SignalR</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> MQTT</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> Event-driven notifications</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-950 p-6 rounded-xl border border-slate-900 hover:border-amber-400/40 hover:bg-[#0c1220] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(212,175,90,0.1)] group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-amber-400/5 rounded-full blur-2xl group-hover:bg-amber-400/10 transition-colors"></div>
+                    <div class="w-12 h-12 rounded-lg bg-amber-400/10 flex items-center justify-center text-amber-400 text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-4 text-lg tech-font tracking-wide">Cloud & Tools</h3>
+                    <ul class="space-y-3 font-mono text-xs text-slate-400">
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> Microsoft Azure (App Service, Blob Storage)</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> Visual Studio, VS Code, SSMS</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> Git, SVN, Postman, IIS</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-amber-400 mr-2 text-[10px]"></i> Azure Active Directory</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 relative z-10 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-10">
+                <div>
+                    <h2 class="text-3xl font-bold text-white uppercase tracking-wider">Featured Projects</h2>
+                    <p class="text-sm text-slate-400 mt-1">Enterprise systems built across fire safety, HR,
+                        collaboration, inventory, telecom and hospitality domains.</p>
+                </div>
+                <div class="flex space-x-3 mt-4 sm:mt-0">
+                    <button id="prevBtn"
+                        class="w-10 h-10 rounded bg-slate-900 hover:bg-slate-800 border border-slate-800 text-white flex items-center justify-center transition hover:text-amber-400">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="nextBtn"
+                        class="w-10 h-10 rounded bg-slate-900 hover:bg-slate-800 border border-slate-800 text-white flex items-center justify-center transition hover:text-amber-400">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="overflow-hidden">
+                <div id="projectSlider" class="slider-container gap-6">
+
+                    <!-- 1 -->
+                    <div class="min-w-[100%] sm:min-w-[48%] lg:min-w-[31.5%] bg-slate-950 rounded-xl overflow-hidden border border-slate-900 glow-gold-hover transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="relative">
+                                <img src="https://media.istockphoto.com/id/1022892534/photo/engineer-manager-check-and-control-automation-robot-arms-machine-in-intelligent-industrial.jpg?s=612x612&w=0&k=20&c=1lfHMx6lgDgjIpt2YfJHLZ692aYXAJnQE4IJj8UXcVU="
+                                    alt="IoT Fire Detection" class="w-full h-40 object-cover opacity-80">
+                                <span class="absolute top-3 left-3 bg-[#060a14]/80 border border-amber-400/40 text-amber-300 text-[10px] font-mono px-2 py-1 rounded uppercase tracking-wider">NAFFCO · 2025</span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-lg font-bold text-white mb-2">IoT Fire Detection System</h3>
+                                <p class="text-xs text-slate-400 leading-relaxed">Real-time monitoring architecture
+                                    with instant sensor-based alerts via SignalR, live geo-visualization using
+                                    Leaflet Maps, and a Clean Architecture sensor-data pipeline.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0 flex flex-wrap gap-1.5">
+                            <span class="bg-slate-900 text-amber-400 text-[10px] px-2 py-0.5 rounded font-mono">Angular 16</span>
+                            <span class="bg-slate-900 text-amber-400 text-[10px] px-2 py-0.5 rounded font-mono">SignalR</span>
+                            <span class="bg-slate-900 text-amber-400 text-[10px] px-2 py-0.5 rounded font-mono">Leaflet Maps</span>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="min-w-[100%] sm:min-w-[48%] lg:min-w-[31.5%] bg-slate-950 rounded-xl overflow-hidden border border-slate-900 glow-gold-hover transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=500&q=80"
+                                    alt="HR Self-Service" class="w-full h-40 object-cover opacity-80">
+                                <span class="absolute top-3 left-3 bg-[#060a14]/80 border border-amber-400/40 text-amber-300 text-[10px] font-mono px-2 py-1 rounded uppercase tracking-wider">NAFFCO · 2025</span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-lg font-bold text-white mb-2">HR Self-Service System</h3>
+                                <p class="text-xs text-slate-400 leading-relaxed">Enterprise HR modules automating
+                                    requests, department-wise approvals, exit workflows, and configurable multi-level
+                                    status tracking with full audit history.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0 flex flex-wrap gap-1.5">
+                            <span class="bg-slate-900 text-amber-400 text-[10px] px-2 py-0.5 rounded font-mono">RBAC</span>
+                            <span class="bg-slate-900 text-amber-400 text-[10px] px-2 py-0.5 rounded font-mono">.NET Core</span>
+                            <span class="bg-slate-900 text-amber-400 text-[10px] px-2 py-0.5 rounded font-mono">Workflows</span>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="min-w-[100%] sm:min-w-[48%] lg:min-w-[31.5%] bg-slate-950 rounded-xl overflow-hidden border border-slate-900 glow-gold-hover transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=500&q=80"
+                                    alt="Collaboration Platform" class="w-full h-40 object-cover opacity-80">
+                                <span class="absolute top-3 left-3 bg-[#060a14]/80 border border-amber-400/40 text-amber-300 text-[10px] font-mono px-2 py-1 rounded uppercase tracking-wider">NAFFCO · 2025</span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-lg font-bold text-white mb-2">Collaboration & Communication Platform</h3>
+                                <p class="text-xs text-slate-400 leading-relaxed">Task management and real-time chat
+                                    with SignalR-powered messaging, JWT-secured Angular frontend, and file sharing
+                                    across devices.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0 flex flex-wrap gap-1.5">
+                            <span class="bg-slate-900 text-amber-400 text-[10px] px-2 py-0.5 rounded font-mono">Real-time Chat</span>
+                            <span class="bg-slate-900 text-amber-400 text-[10px] px-2 py-0.5 rounded font-mono">JWT</span>
+                            <span class="bg-slate-900 text-amber-400 text-[10px] px-2 py-0.5 rounded font-mono">Dapper</span>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="min-w-[100%] sm:min-w-[48%] lg:min-w-[31.5%] bg-slate-950 rounded-xl overflow-hidden border border-slate-900 glow-gold-hover transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=500&q=80"
+                                    alt="Inventory Management" class="w-full h-40 object-cover opacity-80">
+                                <span class="absolute top-3 left-3 bg-[#060a14]/80 border border-amber-400/40 text-amber-300 text-[10px] font-mono px-2 py-1 rounded uppercase tracking-wider">NAFFCO · 2025</span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-lg font-bold text-white mb-2">Inventory & Stock Management System</h3>
+                                <p class="text-xs text-slate-400 leading-relaxed">Centralized platform for item
+                                    delegation and stock verification, with variance analysis and dashboard APIs for
+                                    inventory insights.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0 flex flex-wrap gap-1.5">
+                            <span class="bg-slate-900 text-amber-400 text-[10px] px-2 py-0.5 rounded font-mono">Dashboards</span>
+                            <span class="bg-slate-900 text-amber-400 text-[10px] px-2 py-0.5 rounded font-mono">SQL Server</span>
+                            <span class="bg-slate-900 text-amber-400 text-[10px] px-2 py-0.5 rounded font-mono">Reporting</span>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="min-w-[100%] sm:min-w-[48%] lg:min-w-[31.5%] bg-slate-950 rounded-xl overflow-hidden border border-slate-900 glow-gold-hover transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=500&q=80"
+                                    alt="Major Service Outage System" class="w-full h-40 object-cover opacity-80">
+                                <span class="absolute top-3 left-3 bg-[#060a14]/80 border border-amber-400/40 text-amber-300 text-[10px] font-mono px-2 py-1 rounded uppercase tracking-wider">TCS · 2023</span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-lg font-bold text-white mb-2">Major Service Outage System (British
+                                    Telecom)</h3>
+                                <p class="text-xs text-slate-400 leading-relaxed">Outage management platform with
+                                    reactive IVR-based incident creation, proactive scheduling, and full lifecycle
+                                    tracking for service disruptions.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0 flex flex-wrap gap-1.5">
+                            <span class="bg-slate-900 text-amber-400 text-[10px] px-2 py-0.5 rounded font-mono">Enterprise</span>
+                            <span class="bg-slate-900 text-amber-400 text-[10px] px-2 py-0.5 rounded font-mono">Azure</span>
+                            <span class="bg-slate-900 text-amber-400 text-[10px] px-2 py-0.5 rounded font-mono">Telecom</span>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="min-w-[100%] sm:min-w-[48%] lg:min-w-[31.5%] bg-slate-950 rounded-xl overflow-hidden border border-slate-900 glow-gold-hover transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=500&q=80"
+                                    alt="Restaurant Management System" class="w-full h-40 object-cover opacity-80">
+                                <span class="absolute top-3 left-3 bg-[#060a14]/80 border border-amber-400/40 text-amber-300 text-[10px] font-mono px-2 py-1 rounded uppercase tracking-wider">Lucid IT · 2021</span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-lg font-bold text-white mb-2">Restaurant Management System</h3>
+                                <p class="text-xs text-slate-400 leading-relaxed">Table reservation and order-punching
+                                    REST APIs with billing logic, order workflows, and optimized SQL Server queries.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0 flex flex-wrap gap-1.5">
+                            <span class="bg-slate-900 text-amber-400 text-[10px] px-2 py-0.5 rounded font-mono">POS</span>
+                            <span class="bg-slate-900 text-amber-400 text-[10px] px-2 py-0.5 rounded font-mono">.NET Core</span>
+                            <span class="bg-slate-900 text-amber-400 text-[10px] px-2 py-0.5 rounded font-mono">ADO.NET</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-20 bg-[#0a0f1c] border-y border-slate-900 relative z-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-14">
+
+                <!-- Left: Professional Journey -->
+                <div class="lg:col-span-3">
+                    <h2 class="text-2xl md:text-3xl font-bold text-white mb-10 uppercase tracking-wider tech-font">Professional
+                        Journey</h2>
+
+                    <div class="space-y-6 relative pl-9 before:absolute before:left-[15px] before:top-2 before:bottom-2 before:w-0.5 before:bg-slate-800">
+
+                        <!-- NAFFCO -->
+                        <div class="relative group bg-slate-950 border border-slate-900 hover:border-amber-400/40 rounded-xl p-5 transition-all duration-300 hover:-translate-y-0.5">
+                            <div class="absolute -left-9 top-5 w-4 h-4 rounded-full bg-amber-500 border-4 border-[#0a0f1c] z-10 group-hover:bg-amber-400 transition"></div>
+                            <div class="flex items-start justify-between gap-3 mb-3">
+                                <div>
+                                    <h3 class="text-base font-bold text-white leading-tight">Full Stack Software Developer</h3>
+                                    <p class="text-slate-500 text-xs mt-0.5">NAFFCO FZCO · Dubai, UAE</p>
+                                </div>
+                                <span class="shrink-0 bg-amber-400/10 text-amber-400 font-mono text-[10px] px-2.5 py-1 rounded-full border border-amber-400/20">JAN 2025 – NOW</span>
+                            </div>
+                            <ul class="space-y-1.5 text-xs text-slate-400">
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-amber-400 text-[10px] mt-1"></i> Real-time IoT fire-detection dashboards on Angular 16 & .NET 9 with SignalR alerts</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-amber-400 text-[10px] mt-1"></i> Legacy WebForms → Angular/.NET Core migration with AI-driven automation</li>
+                            </ul>
+                        </div>
+
+                        <!-- TCS -->
+                        <div class="relative group bg-slate-950 border border-slate-900 hover:border-amber-400/40 rounded-xl p-5 transition-all duration-300 hover:-translate-y-0.5">
+                            <div class="absolute -left-9 top-5 w-4 h-4 rounded-full bg-slate-700 border-4 border-[#0a0f1c] z-10 group-hover:bg-amber-400 transition"></div>
+                            <div class="flex items-start justify-between gap-3 mb-3">
+                                <div>
+                                    <h3 class="text-base font-bold text-white leading-tight">Software Engineer</h3>
+                                    <p class="text-slate-500 text-xs mt-0.5">Tata Consultancy Services · Bangalore, India</p>
+                                </div>
+                                <span class="shrink-0 bg-slate-900 text-slate-400 font-mono text-[10px] px-2.5 py-1 rounded-full border border-slate-800">2022 – 2024</span>
+                            </div>
+                            <ul class="space-y-1.5 text-xs text-slate-400">
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-amber-400 text-[10px] mt-1"></i> Scalable ASP.NET Core APIs for British Telecom, deployed on Azure</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-amber-400 text-[10px] mt-1"></i> Improved PL/SQL data processing efficiency by 20%</li>
+                            </ul>
+                        </div>
+
+                        <!-- Lucid IT -->
+                        <div class="relative group bg-slate-950 border border-slate-900 hover:border-amber-400/40 rounded-xl p-5 transition-all duration-300 hover:-translate-y-0.5">
+                            <div class="absolute -left-9 top-5 w-4 h-4 rounded-full bg-slate-700 border-4 border-[#0a0f1c] z-10 group-hover:bg-amber-400 transition"></div>
+                            <div class="flex items-start justify-between gap-3 mb-3">
+                                <div>
+                                    <h3 class="text-base font-bold text-white leading-tight">Web API Developer</h3>
+                                    <p class="text-slate-500 text-xs mt-0.5">Lucid IT Solution Pvt Ltd · Bangalore, India</p>
+                                </div>
+                                <span class="shrink-0 bg-slate-900 text-slate-400 font-mono text-[10px] px-2.5 py-1 rounded-full border border-slate-800">2021 – 2022</span>
+                            </div>
+                            <ul class="space-y-1.5 text-xs text-slate-400">
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-amber-400 text-[10px] mt-1"></i> RESTful APIs for a Restaurant POS system with JWT-secured role-based access</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Education & Details -->
+                <div id="education" class="lg:col-span-2">
+                    <h2 class="text-2xl md:text-3xl font-bold text-white mb-10 uppercase tracking-wider tech-font">Education
+                        & Details</h2>
+
+                    <div class="flex flex-col gap-6">
+
+                        <!-- Education card -->
+                        <div class="bg-slate-950 p-5 rounded-xl border border-slate-900 shadow-lg relative overflow-hidden group hover:border-amber-400/30 transition-all duration-300">
+                            <div class="absolute -right-10 -top-10 w-32 h-32 bg-amber-400/5 rounded-full blur-3xl group-hover:bg-amber-400/10 transition-colors"></div>
+                            <div class="flex items-start gap-4 relative z-10">
+                                <div class="w-11 h-11 rounded-full bg-amber-400/10 flex items-center justify-center text-amber-400 text-lg shrink-0 group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-base font-bold text-white mb-1 tech-font">Master of Computer Applications</h3>
+                                    <p class="text-amber-400 font-mono text-xs mb-2.5">Mangalore University · Dec 2020</p>
+                                    <p class="text-slate-400 text-xs leading-relaxed">Postgraduate degree covering
+                                        software engineering, database systems, and application architecture.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Consolidated details card -->
+                        <div class="bg-slate-950 p-5 rounded-xl border border-slate-900 hover:border-amber-400/30 transition-colors">
+                            <div class="grid grid-cols-2 gap-x-6 gap-y-5">
+                                <div>
+                                    <span class="flex items-center gap-1.5 text-slate-500 text-[10px] uppercase tracking-wider mb-1.5 font-mono"><i class="fas fa-passport text-amber-400"></i> Visa Status</span>
+                                    <span class="text-white font-medium text-sm">Sponsored residential visa</span>
+                                </div>
+                                <div>
+                                    <span class="flex items-center gap-1.5 text-slate-500 text-[10px] uppercase tracking-wider mb-1.5 font-mono"><i class="fas fa-hourglass-half text-amber-400"></i> Notice Period</span>
+                                    <span class="text-white font-medium text-sm">30 days</span>
+                                </div>
+                                <div>
+                                    <span class="flex items-center gap-1.5 text-slate-500 text-[10px] uppercase tracking-wider mb-1.5 font-mono"><i class="fas fa-language text-amber-400"></i> Languages</span>
+                                    <span class="text-white font-medium text-sm">English <span class="text-amber-400 font-mono text-xs">(Fluent)</span></span>
+                                </div>
+                                <div>
+                                    <span class="flex items-center gap-1.5 text-slate-500 text-[10px] uppercase tracking-wider mb-1.5 font-mono"><i class="fas fa-location-dot text-amber-400"></i> Based In</span>
+                                    <span class="text-white font-medium text-sm">Dubai, UAE</span>
+                                </div>
+                            </div>
+                            <p class="mt-5 pt-5 border-t border-slate-900 text-xs text-slate-400 leading-relaxed">
+                                Open to on-site, hybrid, and remote enterprise engagements across the UAE and beyond.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 bg-black py-10 relative z-10 text-center text-[11px] text-slate-600 font-mono">
+        <div class="max-w-7xl mx-auto px-6 space-y-4">
+            <div class="flex justify-center flex-wrap gap-6 text-xs text-slate-400 mb-2">
+                <a href="mailto:pulunjanarashmitha97@gmail.com" class="hover:text-amber-400"><i class="fas fa-envelope mr-1"></i> pulunjanarashmitha97@gmail.com</a>
+                <a href="tel:+9710509028359" class="hover:text-amber-400"><i class="fas fa-phone-alt mr-1"></i> +971 50 902 8359</a>
+                <a href="https://linkedin.com/in/rashmitha-pulunjana-810560202" target="_blank" class="hover:text-amber-400"><i class="fa-brands fa-linkedin mr-1"></i> LinkedIn</a>
+            </div>
+            <p>&copy; 2026 Rashmitha P S. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const slider = document.getElementById('projectSlider');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const sliderContainer = slider.parentElement;
+
+        let currentIndex = 0;
+        let autoPlayInterval;
+
+        function getCardsPerView() {
+            if (window.innerWidth >= 1024) return 3;
+            if (window.innerWidth >= 640) return 2;
+            return 1;
+        }
+
+        function updateSliderPosition() {
+            if (!slider.children[0]) return;
+            const cardWidth = slider.children[0].getBoundingClientRect().width;
+            const gap = 24;
+            slider.style.transform = `translateX(-${currentIndex * (cardWidth + gap)}px)`;
+        }
+
+        function moveToNext() {
+            const totalCards = slider.children.length;
+            const cardsPerView = getCardsPerView();
+            if (currentIndex < totalCards - cardsPerView) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            updateSliderPosition();
+        }
+
+        function moveToPrev() {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                const totalCards = slider.children.length;
+                currentIndex = totalCards - getCardsPerView();
+            }
+            updateSliderPosition();
+        }
+
+        nextBtn.addEventListener('click', moveToNext);
+        prevBtn.addEventListener('click', moveToPrev);
+
+        window.addEventListener('resize', () => {
+            currentIndex = 0;
+            updateSliderPosition();
+        });
+
+        function startAutoPlay() { autoPlayInterval = setInterval(moveToNext, 3500); }
+        function stopAutoPlay() { clearInterval(autoPlayInterval); }
+
+        startAutoPlay();
+        sliderContainer.addEventListener('mouseenter', stopAutoPlay);
+        sliderContainer.addEventListener('mouseleave', startAutoPlay);
+        nextBtn.parentElement.addEventListener('mouseenter', stopAutoPlay);
+        nextBtn.parentElement.addEventListener('mouseleave', startAutoPlay);
+    </script>
+
+    <!-- Floating Contact Widgets -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-center">
+        <a href="mailto:pulunjanarashmitha97@gmail.com"
+            class="bg-[#ea4335] hover:bg-[#c5221f] text-white p-3 rounded-full shadow-lg hover:shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center group"
+            aria-label="Send an Email">
+            <i class="fas fa-envelope text-lg w-6 h-6 flex items-center justify-center"></i>
+            <span class="absolute right-full mr-4 bg-slate-900 border border-slate-700 text-white text-xs font-semibold px-3 py-1.5 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                Email Me
+            </span>
+        </a>
+
+        <a href="tel:+9710509028359"
+            class="bg-[#007bff] hover:bg-[#0056b3] text-white p-3 rounded-full shadow-lg hover:shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center group"
+            aria-label="Call Me">
+            <i class="fas fa-phone-alt text-lg w-6 h-6 flex items-center justify-center"></i>
+            <span class="absolute right-full mr-4 bg-slate-900 border border-slate-700 text-white text-xs font-semibold px-3 py-1.5 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                Call Me
+            </span>
+        </a>
+
+        <a href="https://linkedin.com/in/rashmitha-pulunjana-810560202" target="_blank"
+            class="bg-[#0A66C2] hover:bg-[#084b8f] text-white p-4 rounded-full shadow-lg hover:shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center group"
+            aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin text-2xl"></i>
+            <span class="absolute right-full mr-4 bg-slate-900 border border-slate-700 text-white text-xs font-semibold px-3 py-1.5 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                Connect on LinkedIn
+            </span>
+        </a>
+    </div>
+</body>
+
+</html>
